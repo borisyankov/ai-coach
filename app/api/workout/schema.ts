@@ -1,5 +1,11 @@
 import { z } from "zod";
 
+export type WorkoutParams = {
+  experience: string;
+  duration: string;
+  frequency: string;
+};
+
 const workoutSchema = z.object({
   exerciseName: z.string(),
   sets: z.number(),
